@@ -16,7 +16,7 @@ sys.path.insert(0, os.path.abspath("../"))
 # -- Project information -----------------------------------------------------
 
 project = "{{ cookiecutter.repo_name }}"
-copyright = " {{ cookiecutter.copyright_year }}, Copyright (C) Spark Cleantech SAS (SIREN 909736068)"
+copyright = "2024, Copyright (C) Spark Cleantech SAS (SIREN 909736068)"
 author = "{{ cookiecutter.project_author }}"
 version = {{ cookiecutter.repo_name }}.__version__
 release = {{ cookiecutter.repo_name }}.__version__
