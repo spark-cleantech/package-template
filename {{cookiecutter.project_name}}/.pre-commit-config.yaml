@@ -4,7 +4,6 @@ repos:
   hooks:
   - id: trailing-whitespace
   - id: end-of-file-fixer
-  - id: check-json
   - id: check-yaml
   - id: check-toml
   - id: check-added-large-files
@@ -37,3 +36,7 @@ repos:
   rev: v8.21.2
   hooks:
   - id: gitleaks
+- repo: https://gitlab.com/bmares/check-json5 # JSON5 allows comments and trailing commas in JSON files
+  rev: v1.0.0
+  hooks:
+  - id: check-json5
