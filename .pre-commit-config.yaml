@@ -4,7 +4,6 @@ repos:
   hooks:
   - id: trailing-whitespace
   - id: end-of-file-fixer
-  - id: check-json
   - id: check-yaml
   - id: check-toml
     exclude: pyproject.toml
@@ -22,3 +21,7 @@ repos:
   - id: pretty-format-toml
     args: [--autofix]
     exclude: pyproject.toml
+- repo: https://gitlab.com/bmares/check-json5 # JSON5 allows comments and trailing commas in JSON files
+  rev: v1.0.0
+  hooks:
+  - id: check-json5
