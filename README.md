@@ -1,27 +1,27 @@
 # Spark Package Template
 
-This package is developed to ease development of Spark-Cleantech packages : it helps you create a 
+This package is developed to ease development of Spark-Cleantech packages : it helps you create a
 new package with already pre-configured tests & linting & documentation (see Features)
 
-## Usage : create a new package 
+## Usage : create a new package
 
 ### 1. Decide whether the package will need a dedicated environment
 
-For large projects it is recommended to use an isolated environment: 
+For large projects it is recommended to use an isolated environment:
 
 ```
 conda create -n MY_PACKAGE -c conda-forge python=3.11 cruft make -y
 conda activate MY_PACKAGE
 ```
 
-For smaller projects (analysis tools, etc), it is recommended to use 
-a common environment `spy` (Spark Python) 
+For smaller projects (analysis tools, etc), it is recommended to use
+a common environment `spy` (Spark Python)
 
 ```
 conda activate spy
 ```
 
-If you create an isolated environment : 
+If you create an isolated environment :
 
 create a new conda environment (e.g. `MY_PACKAGE`) with Python 3.11,
 cruft and make, then create the package:
