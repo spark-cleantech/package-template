@@ -15,6 +15,7 @@ Run in Python:
 ```python
 >>> import {{ cookiecutter.repo_name }}
 >>> print({{ cookiecutter.repo_name }}.__version__)
+
 ```
 
 ## Use in a dedicated environment
@@ -35,6 +36,7 @@ Run in Python:
 ```python
 >>> import {{ cookiecutter.repo_name }}
 >>> print({{ cookiecutter.repo_name }}.__version__)
+
 ```
 
 ## Workflow for Developers/contributors
