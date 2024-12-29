@@ -14,7 +14,6 @@ Run in Python:
 
 ```python
 >>> import {{ cookiecutter.repo_name }}
->>> print({{ cookiecutter.repo_name }}.__version__)
 
 ```
 
@@ -35,7 +34,6 @@ Run in Python:
 
 ```python
 >>> import {{ cookiecutter.repo_name }}
->>> print({{ cookiecutter.repo_name }}.__version__)
 
 ```
 
