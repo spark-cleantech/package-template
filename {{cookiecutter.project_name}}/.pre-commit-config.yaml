@@ -33,7 +33,7 @@ repos:
   - id: pretty-format-toml
     args: [--autofix]
 - repo: https://github.com/gitleaks/gitleaks
-  rev: v8.23.3
+  rev: v8.24.0
   hooks:
   - id: gitleaks
 - repo: https://gitlab.com/bmares/check-json5 # JSON5 allows comments and trailing commas in JSON files
