@@ -14,7 +14,7 @@ classifiers = [
 ]
 description = "{{ cookiecutter.project_short_description }}"
 dynamic = ["version"]
-license = {file = "LICENSE"}
+license = { file = "LICENSE" }
 name = "{{ cookiecutter.project_name }}"
 readme = "README.md"
 
@@ -57,6 +57,10 @@ convention = "numpy"
 packages = ["{{ cookiecutter.repo_name }}"]
 
 [tool.setuptools_scm]
+# Between tags the version reads X.Y.Z.post1.devN+g<hash> ("after X.Y.Z, N commits
+# later"), instead of the default that guesses the next patch number (X.Y.(Z+1).devN),
+# which is wrong when the next release turns out to be a minor or major.
+version_scheme = "no-guess-dev"
 write_to = "{{ cookiecutter.repo_name }}/version.py"
 write_to_template = '''
 # Do not change! Do not track in version control!
