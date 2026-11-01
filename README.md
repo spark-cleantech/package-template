@@ -86,6 +86,9 @@ Alpha stage:
   - various linters
   - ruff
 - version with setuptools-scm-git
+  - `no-guess-dev` scheme: between tags the version reads `X.Y.Z.post1.devN+g<hash>`
+  - caveat: `version.py` is written at install time, so `pip install -e` freezes the version
+    until reinstalled; code that must report the exact running commit should ask git at runtime
 - copyright license
 - GitHub Actions
   - unit-tests (py3.11)
