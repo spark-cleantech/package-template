@@ -14,7 +14,7 @@ classifiers = [
 ]
 description = "{{ cookiecutter.project_short_description }}"
 dynamic = ["version"]
-license = {file = "LICENSE"}
+license = { file = "LICENSE" }
 name = "{{ cookiecutter.project_name }}"
 readme = "README.md"
 
